@@ -1,0 +1,7 @@
+.listOfMovies {
+    width: min(100% - 2rem, 70rem);
+    margin-inline: auto;
+    display: grid;
+    gap: 30px;
+    grid-template-columns: 1fr 1fr 1fr;
+}
