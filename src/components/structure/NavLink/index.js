@@ -7,7 +7,7 @@ export default function NavLink({ to, children, ...props }) {
             className={({ isActive }) => isActive ? 'is-active' : undefined }
             to={to}
         >
-        {children}
+            {children}
         </NavLinkReactRouter>
     )
 }

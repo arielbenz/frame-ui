@@ -10,7 +10,7 @@ export default function MovieDetails({ id }) {
     useEffect(() => {
         getSingleMovie({ id: id }).then(movie => {
             setMovie(movie)
-      })
+        })
     }, [id])
 
     return (

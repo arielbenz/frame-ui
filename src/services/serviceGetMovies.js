@@ -25,9 +25,9 @@ export default function getMovies ({ page = 1 } = {}) {
     }
 
     return axios.get(apiURL, {
-            params: {
-                api_key: API_KEY,
-            },
-        }).then((res) => res.data)
+        params: {
+            api_key: API_KEY,
+        },
+    }).then((res) => res.data)
         .then(fromApiResponseToMovies)
 }

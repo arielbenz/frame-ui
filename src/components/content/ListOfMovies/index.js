@@ -12,9 +12,8 @@ export default function ListOfMovies () {
         getMovies()
             .then(movies => {
                 setMovies(movies)
-          })
+            })
     }, [setMovies])
-
 
     return (
         <div className="listOfMovies">

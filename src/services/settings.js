@@ -9,4 +9,4 @@ export const ENDPOINTS = {
     popular: '/movie/popular',
     top_rated: '/movie/top_rated',
     upcoming: '/movie/upcoming',
-  };
+};

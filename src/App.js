@@ -16,32 +16,32 @@ import 'styles/App.css';
  */
 export default function App() {
 
-  return (
-    <div className="App">
+    return (
+        <div className="App">
 
-      <header className="App-header">
-        <Link to={`${ROUTES.home}`}>
-          <figure className="App-logo">
-            <img alt="Frame logo" src="/frame-logo.png" />
-          </figure>
-        </Link>
+            <header className="App-header">
+                <Link to={`${ROUTES.home}`}>
+                    <figure className="App-logo">
+                        <img alt="Frame logo" src="/frame-logo.png" />
+                    </figure>
+                </Link>
 
-        <nav>
-          <ul>
-            <li><NavLink to={`${ROUTES.home}`}>Home</NavLink></li>
-            <li><NavLink to={`${ROUTES.about}`}>About</NavLink></li>
-          </ul>
-        </nav>
+                <nav>
+                    <ul>
+                        <li><NavLink to={`${ROUTES.home}`}>Home</NavLink></li>
+                        <li><NavLink to={`${ROUTES.about}`}>About</NavLink></li>
+                    </ul>
+                </nav>
 
-      </header>
+            </header>
 
-      <Routes>
-        <Route path={`${ROUTES.home}`} element={ <HomePage/> }></Route>
-        <Route path={`${ROUTES.about}`} element={ <AboutPage/> }></Route>
-        <Route path={`${ROUTES.movieDetail}`} element={ <MovieDetailsPage/> }></Route>
-        <Route path={`${ROUTES.error}`} element={ <ErrorPage/> }></Route>
-      </Routes>      
+            <Routes>
+                <Route path={`${ROUTES.home}`} element={ <HomePage/> }></Route>
+                <Route path={`${ROUTES.about}`} element={ <AboutPage/> }></Route>
+                <Route path={`${ROUTES.movieDetail}`} element={ <MovieDetailsPage/> }></Route>
+                <Route path={`${ROUTES.error}`} element={ <ErrorPage/> }></Route>
+            </Routes>      
 
-    </div>
-  );
+        </div>
+    );
 }
