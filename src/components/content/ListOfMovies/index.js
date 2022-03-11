@@ -1,5 +1,5 @@
 import React, { useState, useEffect} from 'react';
-import Movie from 'components/Movie'
+import MoviePoster from 'components/content/MoviePoster'
 import getMovies from 'services/serviceGetMovies';
 
 import './ListOfMovies.css'
@@ -20,13 +20,13 @@ export default function ListOfMovies () {
         <div className="listOfMovies">
             {
                 movies.map(({id, title, posterUrl, vote_average}) => 
-                    <Movie
+                    <MoviePoster
                         id={id}
                         key={id}
                         title={title}
                         posterUrl={posterUrl}
                         votes={vote_average}>
-                    </Movie>
+                    </MoviePoster>
                 )
             }
         </div>

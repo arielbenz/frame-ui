@@ -1,0 +1,12 @@
+.MovieDetails {
+    display: flex;
+}
+
+.MovieDetails-poster,
+.MovieDetails-content {
+    width: 50%;
+}
+
+.MovieDetails-poster img {
+    width: 100%;
+}

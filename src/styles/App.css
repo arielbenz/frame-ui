@@ -12,9 +12,12 @@
 }
 
 .App {
-  background-color: #303030;
-  color: #fff;
-  text-align: center;
+  
+}
+
+.App-wrapper {
+  width: min(100% - 2rem, 70rem);
+  margin-inline: auto;
 }
 
 .App-logo {

@@ -1,0 +1,12 @@
+.Movie {
+    padding: 20px;
+    text-align: center;
+}
+
+.Movie-poster {
+    display: inline-grid;
+}
+
+.Movie-poster:hover {
+    opacity: 0.8;
+}  

@@ -1,7 +1,7 @@
 import React from 'react'
-import ListOfMovies from 'components/ListOfMovies'
+import ListOfMovies from 'components/content/ListOfMovies'
 
-export default function Home() {
+export default function HomePage() {
 
   return (
     <>
