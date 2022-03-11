@@ -1,6 +1,4 @@
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -14,7 +12,7 @@
 }
 
 .App {
-  background-color: #282c34;
+  background-color: #303030;
   color: #fff;
   text-align: center;
 }
@@ -25,7 +23,46 @@
   width: 144px;
 }
 
+.App-logo:hover {
+  opacity: 0.7;
+}
+
 .App-logo img {
   object-fit: cover;
   width: 100%;
+}
+
+header {
+  background-color: #252525;
+  padding-bottom: 30px;
+}
+
+nav {
+  background-color: #252525;
+  width: 100%;
+}
+
+nav ul {
+  display: flex;
+  list-style-type: none;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li a {
+  display: block;
+  padding: 1rem 2rem;
+  font-size: 1.5rem;
+  color: #f2f2f2;
+  text-decoration: none;
+}
+
+nav a.is-active {
+  font-weight: bold;
+  pointer-events: none;
+}
+
+nav ul li a:hover {
+  background-color: #444;
 }

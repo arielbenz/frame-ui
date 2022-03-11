@@ -1,18 +1,16 @@
-import React from "react"
+import React from 'react'
+import ListOfMovies from 'components/ListOfMovies'
 
 export default function Home() {
 
   return (
     <>
         <title>Home | Frame</title>
-        <header className="o-header">
-            Header
-        </header>
       
         <div className="App-wrapper">
             <div className="App-main">
                 <div className="App-results">
-                    Results
+                    <ListOfMovies></ListOfMovies>
                 </div>
             </div>
         </div>
