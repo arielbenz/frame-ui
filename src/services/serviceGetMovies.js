@@ -1,8 +1,9 @@
 import { API_KEY, API_URL, ENDPOINTS } from './settings'
 import axios from 'axios';
   
-export default function getMovies ({ page = 1 } = {}) {
-    const apiURL = `${API_URL}${ENDPOINTS.top_rated}?api_key=${API_KEY}&language=en-US&page=${page}`
+export default function getMovies ({ movieList, page = 1 } = {}) {
+
+    const apiURL = `${API_URL}${ENDPOINTS[movieList]}?api_key=${API_KEY}&language=en-US&page=${page}`
 
     /**
      * Parse results from the API response

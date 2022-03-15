@@ -1,22 +1,12 @@
-import React, { useState, useEffect} from 'react';
+import React from 'react';
 import MoviePoster from 'components/content/MoviePoster'
-import getMovies from 'services/serviceGetMovies';
 
 import './ListOfMovies.css'
 
-export default function ListOfMovies () {
-
-    const [movies, setMovies] = useState([])
-
-    useEffect(() => {
-        getMovies()
-            .then(movies => {
-                setMovies(movies)
-            })
-    }, [setMovies])
+export default function ListOfMovies ({ movies }) {
 
     return (
-        <div className="listOfMovies">
+        <div className='listOfMovies'>
             {
                 movies.map(({id, title, posterUrl, vote_average}) => 
                     <MoviePoster

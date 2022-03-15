@@ -1,0 +1,15 @@
+.list-selection {
+    background-color: #fafafa;
+    display: flex;
+    padding: 40px 20px;
+}
+
+.list-selection select {
+    padding: 10px 10px;
+    margin-left: 30px;
+    width: 150px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    color: #444;
+    align-self: center;
+}
